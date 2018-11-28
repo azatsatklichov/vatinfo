@@ -12,7 +12,7 @@ To make the application extensible, Spring Boot is used and application left ope
 Also, swagger is provided, in case project is extended with more REST services later
 
 
-# How to setup/run application
+# How to setup/run/test application
 Checkout the GitHub project, and just Java8 is needed in advance, then just from command line tool 
 
 1. run "run.bat"  
