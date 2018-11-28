@@ -12,21 +12,67 @@ To make the application extensible, Spring Boot is used and application left ope
 Also, swagger is provided, in case project is extended with more REST services later
 
 
-# How to setup/run application
+# How to setup/run/test application
 Checkout the GitHub project, and just Java8 is needed in advance, then just from command line tool 
 
 1. run "run.bat"  
 
-2. Browse 
-
+2. Browse (by default 3 countries listed for each case: highest and lowest Standard VAT)
 http://localhost:9090/vatRates
 
+or with count parameter to define how many countries to list out  
 
-Junits
-There are some Unit tests to test if application works correctly
-1. Run JUnits 
+http://localhost:9090/vatRates?count=5
+
+
+Tests
+
+1. Integration tests  - VatInfoAppRestTemplateTest
+To run the integration test, application should be running 
+> Run VatInfoAppRestTemplateTest 
  
 
+2. Or just use POSTMAN client  with GET method 
+http://localhost:9090/vatRates
 
+Response:
+
+{
+    "CountriesWithHighestStandardVATRates": [
+        "Luxembourg",
+        "Malta",
+        "Cyprus"
+    ],
+    "CountriesWithLowestStandardVATRates": [
+        "Hungary",
+        "Sweden",
+        "Denmark"
+    ]
+}
+
+
+http://localhost:9090/vatRates?count=5
+
+{
+    "CountriesWithHighestStandardVATRates": [
+        "Luxembourg",
+        "Malta",
+        "Cyprus",
+        "Romania",
+        "Germany"
+    ],
+    "CountriesWithLowestStandardVATRates": [
+        "Hungary",
+        "Sweden",
+        "Denmark",
+        "Croatia",
+        "Finland"
+    ]
+}
+
+
+3. Use Swagger to test the application
+
+http://localhost:9090/swagger-ui.html
 
   
