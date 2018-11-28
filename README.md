@@ -51,6 +51,26 @@ Response:
 }
 
 
+http://localhost:9090/vatRates?count=5
+
+{
+    "CountriesWithHighestStandardVATRates": [
+        "Luxembourg",
+        "Malta",
+        "Cyprus",
+        "Romania",
+        "Germany"
+    ],
+    "CountriesWithLowestStandardVATRates": [
+        "Hungary",
+        "Sweden",
+        "Denmark",
+        "Croatia",
+        "Finland"
+    ]
+}
+
+
 3. Use Swagger to test the application
 
 http://localhost:9090/swagger-ui.html
