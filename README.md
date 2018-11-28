@@ -20,6 +20,9 @@ Checkout the GitHub project, and just Java8 is needed in advance, then just from
 2. Browse 
 
 http://localhost:9090/vatRates
+http://localhost:9090/vatRates?count=4
+http://localhost:9090/vatRates?count=5
+
 
 
 Junits
