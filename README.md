@@ -25,12 +25,18 @@ or with count parameter to define how many countries to list out
 http://localhost:9090/vatRates?count=5
 
 
+Tests
 
-Junits
-There are some Unit tests to test if application works correctly
-1. Run JUnits 
+1. Integration tests  - VatInfoAppRestTemplateTest
+To run the integration test, application should be running 
+> Run VatInfoAppRestTemplateTest 
  
 
+2. Or just use POSTMAN client  with GET method 
 
+
+3. Use Swagger to test the application
+
+http://localhost:9090/swagger-ui.html
 
   
