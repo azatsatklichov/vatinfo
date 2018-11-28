@@ -33,6 +33,22 @@ To run the integration test, application should be running
  
 
 2. Or just use POSTMAN client  with GET method 
+http://localhost:9090/vatRates
+
+Response:
+
+{
+    "CountriesWithHighestStandardVATRates": [
+        "Luxembourg",
+        "Malta",
+        "Cyprus"
+    ],
+    "CountriesWithLowestStandardVATRates": [
+        "Hungary",
+        "Sweden",
+        "Denmark"
+    ]
+}
 
 
 3. Use Swagger to test the application
