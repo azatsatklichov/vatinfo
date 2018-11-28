@@ -17,10 +17,11 @@ Checkout the GitHub project, and just Java8 is needed in advance, then just from
 
 1. run "run.bat"  
 
-2. Browse 
-
+2. Browse (by default 3 countries listed for each case: highest and lowest Standard VAT)
 http://localhost:9090/vatRates
-http://localhost:9090/vatRates?count=4
+
+or with count parameter to define how many countries to list out  
+
 http://localhost:9090/vatRates?count=5
 
 
