@@ -8,8 +8,7 @@ Suggestions: Keep it clean and simple (yet with a reasonable design allowing fut
 verify the program correctness, implement as a Maven or Gradle project, submit preferably as a GitHub repo link.
 
 # Solution 
-To make the application extensible, Spring Boot is used and application left open for easily extending points (security, web templates e.g. thymeleaf, swagger,  lombok to decrease the coding etc. )
-Also, swagger is provided, in case project is extended with more REST services later
+Java8 and SpringBoot is used to solve the task and implement the respective components. To make the application extensible for future,  application left open for easily extending points (security, web templates e.g. thymeleaf, swagger,  lombok to decrease the coding etc. ) Also, swagger is provided, in case project is extended with more REST services later
 
 
 # How to setup/run/test application
