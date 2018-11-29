@@ -28,7 +28,7 @@ Tests
 
 1. Integration tests  - VatInfoAppRestTemplateTest
 To run the integration test, application should be running 
-> Run VatInfoAppRestTemplateTest 
+> Run VatInfoAppTest.java 
  
 
 2. Or just use POSTMAN client  with GET method 
