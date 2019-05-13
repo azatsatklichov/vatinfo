@@ -1,4 +1,4 @@
-# VATINFO APPLICATION 
+# VATINFO APPLICATION - https://github.com/azats/vatinfo
  VatInfo Application to get Standard VAT Rates for countries with defined   criteria
  
 # Task
@@ -17,11 +17,11 @@ Checkout the GitHub project, and just Java8 is needed in advance, then just from
 1. run "run.bat"  
 
 2. Browse (by default 3 countries listed for each case: highest and lowest Standard VAT)
-http://localhost:9090/vatRates
+http://localhost:9091/vatRates
 
 or with count parameter to define how many countries to list out  
 
-http://localhost:9090/vatRates?count=5
+http://localhost:9091/vatRates?count=5
 
 
 Tests
@@ -32,7 +32,7 @@ To run the integration test, application should be running
  
 
 2. Or just use POSTMAN client  with GET method 
-http://localhost:9090/vatRates
+http://localhost:9091/vatRates
 
 Response:
 
@@ -50,7 +50,7 @@ Response:
 }
 
 
-http://localhost:9090/vatRates?count=5
+http://localhost:9091/vatRates?count=5
 
 {
     "CountriesWithHighestStandardVATRates": [
@@ -72,6 +72,6 @@ http://localhost:9090/vatRates?count=5
 
 3. Use Swagger to test the application
 
-http://localhost:9090/swagger-ui.html
+http://localhost:9091/swagger-ui.html
 
   
