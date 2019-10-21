@@ -8,10 +8,6 @@ import net.sahet.vatinfo.app.dto.VatRateResponse;
 public interface VatRateService {
 
 	VatRateResponse process();
-	
-	VatRateResponse demo();
-	
-	VatRateResponse duplicate();
 
 	/**
 	 * 
