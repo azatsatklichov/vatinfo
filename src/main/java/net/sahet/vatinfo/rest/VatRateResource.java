@@ -1,4 +1,4 @@
-package net.sahet.vatinfo.app.controller;
+package net.sahet.vatinfo.rest;
 
 import net.sahet.vatinfo.app.dto.Rate;
 import net.sahet.vatinfo.app.dto.VatRateResponse;
