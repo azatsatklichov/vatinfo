@@ -22,9 +22,9 @@ import java.util.Map;
  * @author azat satklichov
  */
 @RestController
-public class VatRateController {
+public class VatRateResource {
 
-    private static final Logger logger = LoggerFactory.getLogger(VatRateController.class);
+    private static final Logger logger = LoggerFactory.getLogger(VatRateResource.class);
 
     @Autowired
     VatRateService vatRateService;
