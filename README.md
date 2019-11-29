@@ -25,6 +25,8 @@ or with count parameter to define how many countries to list out
 http://localhost:9091/vatRates?count=5
 http://localhost:9091/vatRates?count=12
 
+http://localhost:9091/getCustomers?firstName=Alana&lastName=tolsto
+
 Tests
 
 1. Integration tests  - VatInfoAppRestTemplateTest
