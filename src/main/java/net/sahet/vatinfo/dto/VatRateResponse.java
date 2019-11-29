@@ -1,4 +1,4 @@
-package net.sahet.vatinfo.app.dto;
+package net.sahet.vatinfo.dto;
 
 import java.util.List;
 

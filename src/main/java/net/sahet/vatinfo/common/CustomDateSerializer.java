@@ -8,15 +8,15 @@ import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.JsonSerializer;
 import com.fasterxml.jackson.databind.SerializerProvider;
 
-import net.sahet.vatinfo.app.utils.DateTimeUtil;
+import net.sahet.vatinfo.utils.DateTimeUtil;
 
 public class CustomDateSerializer extends JsonSerializer<LocalDate> {
 
-    private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DateTimeUtil.DATE_FORMAT);
+	private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DateTimeUtil.DATE_FORMAT);
 
-    @Override
-    public void serialize(LocalDate value, JsonGenerator jsonGenerator, SerializerProvider serializerProvider)
-            throws IOException {
-        jsonGenerator.writeString(value.format(formatter));
-    }
+	@Override
+	public void serialize(LocalDate value, JsonGenerator jsonGenerator, SerializerProvider serializerProvider)
+			throws IOException {
+		jsonGenerator.writeString(value.format(formatter));
+	}
 }

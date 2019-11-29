@@ -2,8 +2,8 @@ package net.sahet.vatinfo.service;
 
 import java.util.List;
 
-import net.sahet.vatinfo.app.dto.Rate;
-import net.sahet.vatinfo.app.dto.VatRateResponse;
+import net.sahet.vatinfo.dto.Rate;
+import net.sahet.vatinfo.dto.VatRateResponse;
 
 public interface VatRateService {
 
