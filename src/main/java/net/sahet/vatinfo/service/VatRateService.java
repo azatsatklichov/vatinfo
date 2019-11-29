@@ -1,4 +1,4 @@
-package net.sahet.vatinfo.app.service;
+package net.sahet.vatinfo.service;
 
 import java.util.List;
 

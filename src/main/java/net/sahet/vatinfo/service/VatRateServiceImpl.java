@@ -1,7 +1,5 @@
-package net.sahet.vatinfo.app.service;
-
-import net.sahet.vatinfo.app.dto.Rate;
-import net.sahet.vatinfo.app.dto.VatRateResponse;
+package net.sahet.vatinfo.service;
+ 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

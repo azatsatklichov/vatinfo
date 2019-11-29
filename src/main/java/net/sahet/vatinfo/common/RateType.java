@@ -1,4 +1,4 @@
-package net.sahet.vatinfo.app.common;
+package net.sahet.vatinfo.common;
 
 import java.util.Arrays;
 import java.util.List;

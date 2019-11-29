@@ -1,4 +1,4 @@
-package net.sahet.vatinfo.app;
+package net.sahet.vatinfo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

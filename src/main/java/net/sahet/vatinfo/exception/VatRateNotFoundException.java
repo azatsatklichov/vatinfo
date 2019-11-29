@@ -1,4 +1,4 @@
-package net.sahet.vatinfo.app.exception;
+package net.sahet.vatinfo.exception;
 
 public class VatRateNotFoundException extends RuntimeException {
 

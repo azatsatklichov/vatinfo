@@ -1,4 +1,4 @@
-package net.sahet.vatinfo.app.utils;
+package net.sahet.vatinfo.utils;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
