@@ -1,35 +1,22 @@
 package net.sahet.vatinfo.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import lombok.Getter;
+import lombok.Setter;
+import net.sahet.vatinfo.common.CustomDateSerializer;
+
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-
-import net.sahet.vatinfo.common.CustomDateSerializer;
-
+@Getter
+@Setter
 public class Period {
 
-	@JsonSerialize(using = CustomDateSerializer.class)
-	@JsonProperty("effective_from")
-	private LocalDate effectiveFrom;
+    @JsonSerialize(using = CustomDateSerializer.class)
+    @JsonProperty("effective_from")
+    private LocalDate effectiveFrom;
 
-	private Map<String, Double> rates = new HashMap<>();
-
-	public LocalDate getEffectiveFrom() {
-		return effectiveFrom;
-	}
-
-	public void setEffectiveFrom(LocalDate effectiveFrom) {
-		this.effectiveFrom = effectiveFrom;
-	}
-
-	public Map<String, Double> getRates() {
-		return rates;
-	}
-
-	public void setRates(Map<String, Double> rates) {
-		this.rates = rates;
-	}
+    private Map<String, Double> rates = new HashMap<>();
 }

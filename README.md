@@ -25,7 +25,10 @@ or with count parameter to define how many countries to list out
 http://localhost:9091/vatRates?count=5
 http://localhost:9091/vatRates?count=12
 
-http://localhost:9091/getCustomers?firstName=Alana&lastName=tolsto
+
+-- with prod-profile (will be improved ), once MongoDB is running
+ http://localhost:9091/getCustomers?firstName=Alana&lastName=tolsto
+http://localhost:9091/vatRates?count=12
 
 Tests
 
@@ -78,3 +81,7 @@ http://localhost:9091/vatRates?count=5
 http://localhost:9091/swagger-ui.html
 
   
+#TODO
+ - adjust profiles
+ - write Data to Mongo DB 
+

@@ -3,12 +3,14 @@ package net.sahet.vatinfo.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import net.sahet.vatinfo.domain.Customer;
 import net.sahet.vatinfo.repository.CustomerRepository;
 
 @Service
+@Profile("prod")
 public class CustomerService {
 
 	@Autowired
