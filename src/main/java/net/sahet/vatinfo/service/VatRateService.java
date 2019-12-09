@@ -2,6 +2,7 @@ package net.sahet.vatinfo.service;
 
 import java.util.List;
 
+import net.sahet.vatinfo.domain.VatRate;
 import net.sahet.vatinfo.dto.Rate;
 import net.sahet.vatinfo.dto.VatRateResponse;
 
@@ -18,5 +19,11 @@ public interface VatRateService {
 	 * @return
 	 */
 	List<String> getVatStandardRates(List<Rate> rates, boolean highestVat, int count);
+
+	/**
+	 * 
+	 * @param mapVatRate
+	 */
+	void addVatRate(VatRate vatRate);
 
 }

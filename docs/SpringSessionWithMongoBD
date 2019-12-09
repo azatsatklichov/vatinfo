@@ -1,0 +1,15 @@
+https://www.baeldung.com/spring-session-mongodb
+
+How Does it Work?
+----------------
+Let's take a look at what goes on in the Spring session behind the scenes.
+
+The SessionRepositoryFilter is responsible for most of the work:
+
+converts the HttpSession into a MongoSession
+checks if there's a Cookie present, and if so, loads the session data from the store
+saves the updated session data in the store
+checks the validity of the session
+Also, the SessionRepositoryFilter creates a cookie with the name SESSION that is HttpOnly and secure. 
+This cookie contains the session id, which is a Base64-encoded value.
+

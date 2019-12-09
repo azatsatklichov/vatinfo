@@ -1686,3 +1686,254 @@ org.springframework.core.convert.ConverterNotFoundException: No converter found 
 2019-12-09 16:15:55.122 DEBUG 54736 --- [http-nio-9091-exec-8] o.s.data.mongodb.core.MongoTemplate      : find using query: { "lastName" : "tolstoyy" } fields: Document{{}} for class: class net.sahet.vatinfo.domain.Customer in collection: customer
 2019-12-09 16:16:24.607 DEBUG 54736 --- [http-nio-9091-exec-5] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : "8cde29d5-f64d-4026-a7c4-d8a27ead14c3" } fields: Document{{}} for class: class org.bson.Document in collection: sessions
 2019-12-09 16:16:24.608 DEBUG 54736 --- [http-nio-9091-exec-5] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : "8cde29d5-f64d-4026-a7c4-d8a27ead14c3" } fields: { } in db.collection: test.sessions
+2019-12-09 16:56:58.764 ERROR 27852 --- [restartedMain] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: INFO  for 'org.springframework'
+2019-12-09 16:56:58.895  INFO 27852 --- [restartedMain] net.sahet.vatinfo.VatInfoApplication     : Starting VatInfoApplication on ASATKLICH-PRG-D with PID 27852 (C:\workspace\vatinfo\target\classes started by ASatklichov in C:\workspace\vatinfo)
+2019-12-09 16:56:58.897  INFO 27852 --- [restartedMain] net.sahet.vatinfo.VatInfoApplication     : No active profile set, falling back to default profiles: default
+2019-12-09 16:56:58.954  INFO 27852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-09 16:56:58.955  INFO 27852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-09 16:57:00.044  INFO 27852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-09 16:57:00.054 DEBUG 27852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for repositories in packages net.sahet.vatinfo.repository.
+2019-12-09 16:57:00.072 DEBUG 27852 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\workspace\vatinfo\target\classes\net\sahet\vatinfo\repository\CustomerRepository.class]
+2019-12-09 16:57:00.073 DEBUG 27852 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\workspace\vatinfo\target\classes\net\sahet\vatinfo\repository\DomainRepository.class]
+2019-12-09 16:57:00.075 DEBUG 27852 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\workspace\vatinfo\target\classes\net\sahet\vatinfo\repository\VatRateRepository.class]
+2019-12-09 16:57:00.133  INFO 27852 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73ms. Found 3 repository interfaces.
+2019-12-09 16:57:01.287  INFO 27852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2019-12-09 16:57:01.315  INFO 27852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-09 16:57:01.315  INFO 27852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-09 16:57:01.329  INFO 27852 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\apps\jdk-12.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/apps/jdk-12.0.1/bin/server;C:/apps/jdk-12.0.1/bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\apps\jdk-12.0.1\bin;C:\apps\Git\cmd;C:\apps\TortoiseGit\bin;C:\apps\apache-maven-3.6.0\bin;C:\apps\apache-ant-1.10.5\bin;C:\apps\Yarn\bin\;C:\apps\nodejs10_16;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft Dynamics AX\60\BusinessConnector\Bin\;C:\Program Files (x86)\Microsoft Dynamics AX\60\Client\Bin\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\apps\gradle-5.4.1\bin;C:\apps\nodejs10_16\;C:\Program Files\MongoDB\Server\4.2\bin;C:\apps\python-3.7.3\Scripts\;C:\apps\python-3.7.3\;C:\Users\asatklichov\AppData\Local\Microsoft\WindowsApps;C:\Users\asatklichov\AppData\Local\Yarn\bin;C:\Users\asatklichov\AppData\Roaming\npm;C:\apps\sts-3.9.8-e4.11\sts-3.9.8.RELEASE;;.]
+2019-12-09 16:57:01.460  INFO 27852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-09 16:57:01.461  INFO 27852 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2506 ms
+2019-12-09 16:57:02.102  INFO 27852 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-12-09 16:57:02.196  INFO 27852 --- [cluster-ClusterId{value='5dee6ecea715116cccdefbf3', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:400}] to localhost:27017
+2019-12-09 16:57:02.206  INFO 27852 --- [cluster-ClusterId{value='5dee6ecea715116cccdefbf3', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2791400}
+2019-12-09 16:57:02.395  INFO 27852 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:401}] to localhost:27017
+2019-12-09 16:57:02.456  INFO 27852 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-09 16:57:02.457  INFO 27852 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sessionRepositoryFilter' to: [/*]
+2019-12-09 16:57:02.458  INFO 27852 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-09 16:57:02.459  INFO 27852 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2019-12-09 16:57:02.461  INFO 27852 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-09 16:57:02.462  INFO 27852 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-09 16:57:02.550 DEBUG 27852 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for net.sahet.vatinfo.repository.CustomerRepository…
+2019-12-09 16:57:02.616  INFO 27852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-09 16:57:02.619 DEBUG 27852 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class net.sahet.vatinfo.domain.Customer for index information.
+2019-12-09 16:57:02.697 DEBUG 27852 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for net.sahet.vatinfo.repository.CustomerRepository.
+2019-12-09 16:57:02.712 DEBUG 27852 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for net.sahet.vatinfo.repository.VatRateRepository…
+2019-12-09 16:57:02.720 DEBUG 27852 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class interface java.util.List for index information.
+2019-12-09 16:57:02.731 DEBUG 27852 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for net.sahet.vatinfo.repository.VatRateRepository.
+2019-12-09 16:57:02.736 DEBUG 27852 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for net.sahet.vatinfo.repository.DomainRepository…
+2019-12-09 16:57:02.747 DEBUG 27852 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class net.sahet.vatinfo.domain.Domain for index information.
+2019-12-09 16:57:02.793 DEBUG 27852 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for net.sahet.vatinfo.repository.DomainRepository.
+2019-12-09 16:57:03.284  INFO 27852 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-09 16:57:03.461  INFO 27852 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-09 16:57:03.742  INFO 27852 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-09 16:57:03.771  INFO 27852 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-09 16:57:03.816  INFO 27852 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-09 16:57:04.144  INFO 27852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2019-12-09 16:57:04.150  INFO 27852 --- [restartedMain] net.sahet.vatinfo.VatInfoApplication     : Started VatInfoApplication in 5.703 seconds (JVM running for 6.232)
+2019-12-09 16:57:44.424  INFO 27852 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-09 16:57:44.425  INFO 27852 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-09 16:57:44.443  INFO 27852 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-12-09 16:57:44.487 DEBUG 27852 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : "8cde29d5-f64d-4026-a7c4-d8a27ead14c3" } fields: Document{{}} for class: class org.bson.Document in collection: sessions
+2019-12-09 16:57:44.492 DEBUG 27852 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : "8cde29d5-f64d-4026-a7c4-d8a27ead14c3" } fields: { } in db.collection: test.sessions
+2019-12-09 16:57:44.718 DEBUG 27852 --- [http-nio-9091-exec-1] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class java.util.ArrayList for index information.
+2019-12-09 16:57:44.729 ERROR 27852 --- [http-nio-9091-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassCastException: class org.bson.Document cannot be cast to class java.util.Collection (org.bson.Document is in unnamed module of loader 'app'; java.util.Collection is in module java.base of loader 'bootstrap')] with root cause
+
+java.lang.ClassCastException: class org.bson.Document cannot be cast to class java.util.Collection (org.bson.Document is in unnamed module of loader 'app'; java.util.Collection is in module java.base of loader 'bootstrap')
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.writeInternal(MappingMongoConverter.java:494) ~[spring-data-mongodb-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.write(MappingMongoConverter.java:443) ~[spring-data-mongodb-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.data.mongodb.core.convert.MappingMongoConverter.write(MappingMongoConverter.java:78) ~[spring-data-mongodb-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.data.mongodb.core.EntityOperations$MappedEntity.toMappedDocument(EntityOperations.java:492) ~[spring-data-mongodb-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.data.mongodb.core.MongoTemplate.doInsert(MongoTemplate.java:1214) ~[spring-data-mongodb-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.data.mongodb.core.MongoTemplate.insert(MongoTemplate.java:1150) ~[spring-data-mongodb-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.save(SimpleMongoRepository.java:81) ~[spring-data-mongodb-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:359) ~[spring-data-commons-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:200) ~[spring-data-commons-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:644) ~[spring-data-commons-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.doInvoke(RepositoryFactorySupport.java:608) ~[spring-data-commons-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.lambda$invoke$3(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$QueryExecutorMethodInterceptor.invoke(RepositoryFactorySupport.java:595) ~[spring-data-commons-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:59) ~[spring-data-commons-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:93) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.data.repository.core.support.SurroundingTransactionDetectorMethodInterceptor.invoke(SurroundingTransactionDetectorMethodInterceptor.java:61) ~[spring-data-commons-2.1.2.RELEASE.jar:2.1.2.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:212) ~[spring-aop-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at com.sun.proxy.$Proxy78.save(Unknown Source) ~[na:na]
+	at net.sahet.vatinfo.service.VatRateServiceImpl.addVatRates(VatRateServiceImpl.java:54) ~[classes/:na]
+	at net.sahet.vatinfo.rest.VatRateResource.getVatRates(VatRateResource.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:215) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:142) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:998) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:890) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:875) ~[spring-webmvc-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:147) ~[spring-session-core-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:81) ~[spring-session-core-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.2.RELEASE.jar:5.1.2.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:770) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.12.jar:9.0.12]
+	at java.base/java.lang.Thread.run(Thread.java:835) ~[na:na]
+
+2019-12-09 16:57:44.737 DEBUG 27852 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : "8cde29d5-f64d-4026-a7c4-d8a27ead14c3" } fields: Document{{}} for class: class org.bson.Document in collection: sessions
+2019-12-09 16:57:44.738 DEBUG 27852 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : "8cde29d5-f64d-4026-a7c4-d8a27ead14c3" } fields: { } in db.collection: test.sessions
+2019-12-09 17:06:17.433 ERROR 48296 --- [restartedMain] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: INFO  for 'org.springframework'
+2019-12-09 17:06:17.644  INFO 48296 --- [restartedMain] net.sahet.vatinfo.VatInfoApplication     : Starting VatInfoApplication on ASATKLICH-PRG-D with PID 48296 (C:\workspace\vatinfo\target\classes started by ASatklichov in C:\workspace\vatinfo)
+2019-12-09 17:06:17.658  INFO 48296 --- [restartedMain] net.sahet.vatinfo.VatInfoApplication     : No active profile set, falling back to default profiles: default
+2019-12-09 17:06:17.714  INFO 48296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-09 17:06:17.716  INFO 48296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-09 17:06:18.913  INFO 48296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-09 17:06:18.923 DEBUG 48296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for repositories in packages net.sahet.vatinfo.repository.
+2019-12-09 17:06:18.932 DEBUG 48296 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\workspace\vatinfo\target\classes\net\sahet\vatinfo\repository\CustomerRepository.class]
+2019-12-09 17:06:18.933 DEBUG 48296 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\workspace\vatinfo\target\classes\net\sahet\vatinfo\repository\DomainRepository.class]
+2019-12-09 17:06:18.934 DEBUG 48296 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\workspace\vatinfo\target\classes\net\sahet\vatinfo\repository\VatRateRepository.class]
+2019-12-09 17:06:18.988  INFO 48296 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65ms. Found 3 repository interfaces.
+2019-12-09 17:06:20.084  INFO 48296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2019-12-09 17:06:20.111  INFO 48296 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-09 17:06:20.112  INFO 48296 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-09 17:06:20.125  INFO 48296 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\apps\jdk-12.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/apps/jdk-12.0.1/bin/server;C:/apps/jdk-12.0.1/bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\apps\jdk-12.0.1\bin;C:\apps\Git\cmd;C:\apps\TortoiseGit\bin;C:\apps\apache-maven-3.6.0\bin;C:\apps\apache-ant-1.10.5\bin;C:\apps\Yarn\bin\;C:\apps\nodejs10_16;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft Dynamics AX\60\BusinessConnector\Bin\;C:\Program Files (x86)\Microsoft Dynamics AX\60\Client\Bin\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\apps\gradle-5.4.1\bin;C:\apps\nodejs10_16\;C:\Program Files\MongoDB\Server\4.2\bin;C:\apps\python-3.7.3\Scripts\;C:\apps\python-3.7.3\;C:\Users\asatklichov\AppData\Local\Microsoft\WindowsApps;C:\Users\asatklichov\AppData\Local\Yarn\bin;C:\Users\asatklichov\AppData\Roaming\npm;C:\apps\sts-3.9.8-e4.11\sts-3.9.8.RELEASE;;.]
+2019-12-09 17:06:20.273  INFO 48296 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-09 17:06:20.274  INFO 48296 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2557 ms
+2019-12-09 17:06:20.882  INFO 48296 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-12-09 17:06:20.957  INFO 48296 --- [cluster-ClusterId{value='5dee70fca71511bca8eb8877', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:402}] to localhost:27017
+2019-12-09 17:06:20.963  INFO 48296 --- [cluster-ClusterId{value='5dee70fca71511bca8eb8877', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2428300}
+2019-12-09 17:06:21.098  INFO 48296 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:403}] to localhost:27017
+2019-12-09 17:06:21.144  INFO 48296 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-09 17:06:21.145  INFO 48296 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sessionRepositoryFilter' to: [/*]
+2019-12-09 17:06:21.146  INFO 48296 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-09 17:06:21.146  INFO 48296 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2019-12-09 17:06:21.146  INFO 48296 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-09 17:06:21.147  INFO 48296 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-09 17:06:21.213 DEBUG 48296 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for net.sahet.vatinfo.repository.CustomerRepository…
+2019-12-09 17:06:21.268  INFO 48296 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-09 17:06:21.269 DEBUG 48296 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class net.sahet.vatinfo.domain.Customer for index information.
+2019-12-09 17:06:21.325 DEBUG 48296 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for net.sahet.vatinfo.repository.CustomerRepository.
+2019-12-09 17:06:21.341 DEBUG 48296 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for net.sahet.vatinfo.repository.VatRateRepository…
+2019-12-09 17:06:21.348 DEBUG 48296 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class net.sahet.vatinfo.domain.VatRate for index information.
+2019-12-09 17:06:21.352 DEBUG 48296 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for net.sahet.vatinfo.repository.VatRateRepository.
+2019-12-09 17:06:21.357 DEBUG 48296 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for net.sahet.vatinfo.repository.DomainRepository…
+2019-12-09 17:06:21.368 DEBUG 48296 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class net.sahet.vatinfo.domain.Domain for index information.
+2019-12-09 17:06:21.404 DEBUG 48296 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for net.sahet.vatinfo.repository.DomainRepository.
+2019-12-09 17:06:21.819  INFO 48296 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-09 17:06:21.971  INFO 48296 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-09 17:06:22.207  INFO 48296 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-09 17:06:22.231  INFO 48296 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-09 17:06:22.268  INFO 48296 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-09 17:06:22.514  INFO 48296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2019-12-09 17:06:22.519  INFO 48296 --- [restartedMain] net.sahet.vatinfo.VatInfoApplication     : Started VatInfoApplication in 5.43 seconds (JVM running for 5.984)
+2019-12-09 17:06:25.187  INFO 48296 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-09 17:06:25.187  INFO 48296 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-09 17:06:25.194  INFO 48296 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-12-09 17:06:25.223 DEBUG 48296 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : "8cde29d5-f64d-4026-a7c4-d8a27ead14c3" } fields: Document{{}} for class: class org.bson.Document in collection: sessions
+2019-12-09 17:06:25.227 DEBUG 48296 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : "8cde29d5-f64d-4026-a7c4-d8a27ead14c3" } fields: { } in db.collection: test.sessions
+2019-12-09 17:06:25.446 DEBUG 48296 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : Saving Document containing fields: [_id, vatRates]
+2019-12-09 17:06:25.512 DEBUG 48296 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: Document{{}} for class: class net.sahet.vatinfo.domain.VatRate in collection: vatRate
+2019-12-09 17:06:25.522 DEBUG 48296 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : Saving Document containing fields: [_id, vatRates]
+2019-12-09 17:06:25.525 DEBUG 48296 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: Document{{}} for class: class net.sahet.vatinfo.domain.VatRate in collection: vatRate
+2019-12-09 17:06:25.715 DEBUG 48296 --- [http-nio-9091-exec-2] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : "8cde29d5-f64d-4026-a7c4-d8a27ead14c3" } fields: Document{{}} for class: class org.bson.Document in collection: sessions
+2019-12-09 17:06:25.730 DEBUG 48296 --- [http-nio-9091-exec-2] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : "8cde29d5-f64d-4026-a7c4-d8a27ead14c3" } fields: { } in db.collection: test.sessions
+2019-12-09 17:08:40.123 ERROR 50992 --- [restartedMain] o.s.b.c.l.LoggingApplicationListener     : Cannot set level: INFO  for 'org.springframework'
+2019-12-09 17:08:40.213  INFO 50992 --- [restartedMain] net.sahet.vatinfo.VatInfoApplication     : Starting VatInfoApplication on ASATKLICH-PRG-D with PID 50992 (C:\workspace\vatinfo\target\classes started by ASatklichov in C:\workspace\vatinfo)
+2019-12-09 17:08:40.214  INFO 50992 --- [restartedMain] net.sahet.vatinfo.VatInfoApplication     : No active profile set, falling back to default profiles: default
+2019-12-09 17:08:40.259  INFO 50992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-12-09 17:08:40.260  INFO 50992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-12-09 17:08:41.262  INFO 50992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-12-09 17:08:41.270 DEBUG 50992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Scanning for repositories in packages net.sahet.vatinfo.repository.
+2019-12-09 17:08:41.278 DEBUG 50992 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\workspace\vatinfo\target\classes\net\sahet\vatinfo\repository\CustomerRepository.class]
+2019-12-09 17:08:41.279 DEBUG 50992 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\workspace\vatinfo\target\classes\net\sahet\vatinfo\repository\DomainRepository.class]
+2019-12-09 17:08:41.279 DEBUG 50992 --- [restartedMain] o.s.d.r.c.RepositoryComponentProvider    : Identified candidate component class: file [C:\workspace\vatinfo\target\classes\net\sahet\vatinfo\repository\VatRateRepository.class]
+2019-12-09 17:08:41.340  INFO 50992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69ms. Found 3 repository interfaces.
+2019-12-09 17:08:42.450  INFO 50992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2019-12-09 17:08:42.476  INFO 50992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-12-09 17:08:42.477  INFO 50992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-12-09 17:08:42.494  INFO 50992 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\apps\jdk-12.0.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/apps/jdk-12.0.1/bin/server;C:/apps/jdk-12.0.1/bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\apps\jdk-12.0.1\bin;C:\apps\Git\cmd;C:\apps\TortoiseGit\bin;C:\apps\apache-maven-3.6.0\bin;C:\apps\apache-ant-1.10.5\bin;C:\apps\Yarn\bin\;C:\apps\nodejs10_16;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft Dynamics AX\60\BusinessConnector\Bin\;C:\Program Files (x86)\Microsoft Dynamics AX\60\Client\Bin\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\apps\gradle-5.4.1\bin;C:\apps\nodejs10_16\;C:\Program Files\MongoDB\Server\4.2\bin;C:\apps\python-3.7.3\Scripts\;C:\apps\python-3.7.3\;C:\Users\asatklichov\AppData\Local\Microsoft\WindowsApps;C:\Users\asatklichov\AppData\Local\Yarn\bin;C:\Users\asatklichov\AppData\Roaming\npm;C:\apps\sts-3.9.8-e4.11\sts-3.9.8.RELEASE;;.]
+2019-12-09 17:08:42.616  INFO 50992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-12-09 17:08:42.617  INFO 50992 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2357 ms
+2019-12-09 17:08:43.173  INFO 50992 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-12-09 17:08:43.251  INFO 50992 --- [cluster-ClusterId{value='5dee718ba71511c730f2f72c', description='null'}-localhost:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:404}] to localhost:27017
+2019-12-09 17:08:43.260  INFO 50992 --- [cluster-ClusterId{value='5dee718ba71511c730f2f72c', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 1]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2482800}
+2019-12-09 17:08:43.413  INFO 50992 --- [restartedMain] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:405}] to localhost:27017
+2019-12-09 17:08:43.462  INFO 50992 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-12-09 17:08:43.463  INFO 50992 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'sessionRepositoryFilter' to: [/*]
+2019-12-09 17:08:43.465  INFO 50992 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-12-09 17:08:43.465  INFO 50992 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2019-12-09 17:08:43.465  INFO 50992 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2019-12-09 17:08:43.466  INFO 50992 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2019-12-09 17:08:43.540 DEBUG 50992 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for net.sahet.vatinfo.repository.CustomerRepository…
+2019-12-09 17:08:43.605  INFO 50992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-12-09 17:08:43.607 DEBUG 50992 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class net.sahet.vatinfo.domain.Customer for index information.
+2019-12-09 17:08:43.687 DEBUG 50992 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for net.sahet.vatinfo.repository.CustomerRepository.
+2019-12-09 17:08:43.704 DEBUG 50992 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for net.sahet.vatinfo.repository.VatRateRepository…
+2019-12-09 17:08:43.709 DEBUG 50992 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class net.sahet.vatinfo.domain.VatRate for index information.
+2019-12-09 17:08:43.712 DEBUG 50992 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for net.sahet.vatinfo.repository.VatRateRepository.
+2019-12-09 17:08:43.717 DEBUG 50992 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Initializing repository instance for net.sahet.vatinfo.repository.DomainRepository…
+2019-12-09 17:08:43.728 DEBUG 50992 --- [restartedMain] .m.c.i.MongoPersistentEntityIndexCreator : Analyzing class class net.sahet.vatinfo.domain.Domain for index information.
+2019-12-09 17:08:43.768 DEBUG 50992 --- [restartedMain] o.s.d.r.c.s.RepositoryFactorySupport     : Finished creation of repository instance for net.sahet.vatinfo.repository.DomainRepository.
+2019-12-09 17:08:44.145  INFO 50992 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-12-09 17:08:44.268  INFO 50992 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-09 17:08:44.530  INFO 50992 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2019-12-09 17:08:44.561  INFO 50992 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2019-12-09 17:08:44.597  INFO 50992 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2019-12-09 17:08:44.887  INFO 50992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2019-12-09 17:08:44.892  INFO 50992 --- [restartedMain] net.sahet.vatinfo.VatInfoApplication     : Started VatInfoApplication in 5.039 seconds (JVM running for 5.514)
+2019-12-09 17:09:04.411  INFO 50992 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-12-09 17:09:04.412  INFO 50992 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-12-09 17:09:04.419  INFO 50992 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-12-09 17:09:04.447 DEBUG 50992 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : "8cde29d5-f64d-4026-a7c4-d8a27ead14c3" } fields: Document{{}} for class: class org.bson.Document in collection: sessions
+2019-12-09 17:09:04.450 DEBUG 50992 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : findOne using query: { "_id" : "8cde29d5-f64d-4026-a7c4-d8a27ead14c3" } fields: { } in db.collection: test.sessions
+2019-12-09 17:09:04.655 DEBUG 50992 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : Saving Document containing fields: [_id, vatRates]
+2019-12-09 17:09:04.676 DEBUG 50992 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: Document{{}} for class: class net.sahet.vatinfo.domain.VatRate in collection: vatRate
+2019-12-09 17:09:04.683 DEBUG 50992 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : Saving Document containing fields: [_id, vatRates]
+2019-12-09 17:09:04.686 DEBUG 50992 --- [http-nio-9091-exec-1] o.s.data.mongodb.core.MongoTemplate      : find using query: { } fields: Document{{}} for class: class net.sahet.vatinfo.domain.VatRate in collection: vatRate

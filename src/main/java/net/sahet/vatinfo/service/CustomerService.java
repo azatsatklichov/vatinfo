@@ -64,31 +64,5 @@ public class CustomerService {
 
 		return findAll;
 	}
-	
-	public void addVatRates(Map<String, List<String>> mapVatRates) {
-		
-		// save a couple of customers
-		customerRepository.save(mapVatRates);  
-		
-		System.out.println("-------------------------------");
-		List<Customer> findAll = customerRepository.findAll();
-		for (Customer customer : findAll) {
-			System.out.println(customer);
-		}
-		System.out.println();
-
-		// fetch an individual customer
-		System.out.println("Customer found with findByFirstName():");
-		System.out.println("--------------------------------");
-		System.out.println(customerRepository.findByFirstName(firstName));
-
-		System.out.println("Customers found with findByLastName():");
-		System.out.println("--------------------------------");
-		for (Customer customer : customerRepository.findByLastName(lastName)) {
-			System.out.println(customer);
-		}
-
-		return findAll;
-	}
 
 }

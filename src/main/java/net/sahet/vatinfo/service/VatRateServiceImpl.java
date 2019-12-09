@@ -5,18 +5,24 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import net.sahet.vatinfo.domain.VatRate;
 import net.sahet.vatinfo.dto.Rate;
 import net.sahet.vatinfo.dto.VatRateResponse;
+import net.sahet.vatinfo.repository.VatRateRepository;
 
 @Service
 public class VatRateServiceImpl implements VatRateService {
 
 	@Value("${vat.json.source.url}")
 	private String vatSourceFromUrl;
+
+	@Autowired
+	private VatRateRepository vatRateService;
 
 	@Override
 	public VatRateResponse process() {
@@ -43,6 +49,13 @@ public class VatRateServiceImpl implements VatRateService {
 		}
 
 		return rates.stream().map(Rate::getName).collect(Collectors.toList());
+	}
+
+	public void addVatRate(VatRate vatRate) {
+		vatRateService.save(vatRate);
+		System.out.println("-------------------------------");
+		List<VatRate> findAll = vatRateService.findAll();
+		findAll.stream().forEach(System.out::println);
 	}
 
 }

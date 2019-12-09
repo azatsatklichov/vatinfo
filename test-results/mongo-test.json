@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5de8e5f1a7151189e83d3af7"},"firstName":"Merdan","lastName":"Merdana","_class":"net.sahet.vatinfo.domain.Customer"}
+{"_id":{"$oid":"5de8e5f1a7151189e83d3af8"},"firstName":"Merdana","lastName":"Merdan","_class":"net.sahet.vatinfo.domain.Customer"}
