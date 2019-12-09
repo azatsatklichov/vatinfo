@@ -11,7 +11,7 @@ import org.junit.Before;
 
 public abstract class AbstractTest {
 
-    public static final String VATINFO_URI = "http://localhost:9090/vatRates";
+    public static final String VATINFO_URI = "http://localhost:9091/vatRates";
 
     protected long startTime;
 

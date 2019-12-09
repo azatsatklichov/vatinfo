@@ -13,9 +13,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import net.sahet.vatinfo.domain.Customer;
 import net.sahet.vatinfo.dto.Rate;
 import net.sahet.vatinfo.dto.VatRateResponse;
 import net.sahet.vatinfo.exception.VatRateNotFoundException;
+import net.sahet.vatinfo.service.CustomerService;
 import net.sahet.vatinfo.service.VatRateService;
 
 /**
@@ -33,6 +35,9 @@ public class VatRateResource {
 
 	@Autowired
 	VatRateService vatRateService;
+	
+	@Autowired
+	CustomerService customerService;
 
 	@ResponseBody
 	@RequestMapping(value = "/vatRates", method = RequestMethod.GET)
@@ -53,6 +58,8 @@ public class VatRateResource {
 		Map<String, List<String>> mapVatRates = new HashMap<>();
 		mapVatRates.put("CountriesWithHighestStandardVATRates", vatHighestStandardRates);
 		mapVatRates.put("CountriesWithLowestStandardVATRates", vatLowestStandardRates);
+		
+		List<Customer> list = customerService.getCustomers(firstName, lastName);
 
 		return mapVatRates;
 

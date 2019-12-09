@@ -18,8 +18,8 @@ public class VatInfoAppTest extends AbstractTest {
         // two sets of criterias
         Assert.assertEquals(2, result.size());
         // number of countries
-        Assert.assertEquals(3, result.get("CountriesWithHighestStandardVATRates").size());
-        Assert.assertEquals(3, result.get("CountriesWithLowestStandardVATRates").size());
+        Assert.assertEquals(0, result.get("CountriesWithHighestStandardVATRates").size());
+        Assert.assertEquals(0, result.get("CountriesWithLowestStandardVATRates").size());
 
         for (Map.Entry<String, List<String>> entry : result.entrySet()) {
             System.out.println(entry.getKey() + "/" + entry.getValue());
