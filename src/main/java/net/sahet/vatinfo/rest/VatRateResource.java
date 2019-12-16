@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import net.sahet.vatinfo.domain.Customer;
-import net.sahet.vatinfo.domain.VatRate;
+import net.sahet.vatinfo.domain.mongo.Customer;
+import net.sahet.vatinfo.domain.mongo.VatRate;
 import net.sahet.vatinfo.dto.Rate;
 import net.sahet.vatinfo.dto.VatRateResponse;
 import net.sahet.vatinfo.exception.VatRateNotFoundException;

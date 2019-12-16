@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import net.sahet.vatinfo.domain.Customer;
+import net.sahet.vatinfo.domain.mongo.Customer;
 import net.sahet.vatinfo.repository.mongo.CustomerRepository;
 
 @Service

@@ -3,7 +3,7 @@ package net.sahet.vatinfo.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import net.sahet.vatinfo.domain.Domain;
+import net.sahet.vatinfo.domain.mongo.Domain;
 import net.sahet.vatinfo.repository.mongo.DomainRepository;
 import net.sahet.vatinfo.repository.mongo.DomainRepositoryWithMongoTemplate;
 

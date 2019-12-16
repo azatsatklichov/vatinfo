@@ -1,10 +1,9 @@
-package net.sahet.vatinfo.domain;
+package net.sahet.vatinfo.domain.rest;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -15,6 +14,6 @@ import lombok.Setter;
 public class WebUser {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	//@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 }

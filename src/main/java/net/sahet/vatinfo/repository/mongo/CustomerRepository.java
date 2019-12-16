@@ -2,8 +2,9 @@ package net.sahet.vatinfo.repository.mongo;
 
 import java.util.List;
 
-import net.sahet.vatinfo.domain.Customer;
 import org.springframework.data.mongodb.repository.MongoRepository;
+
+import net.sahet.vatinfo.domain.mongo.Customer;
 
 
 public interface CustomerRepository extends MongoRepository<Customer, String> {

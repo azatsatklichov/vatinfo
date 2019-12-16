@@ -8,7 +8,7 @@ import org.springframework.data.mongodb.core.query.Update;
 
 import com.mongodb.client.result.UpdateResult;
 
-import net.sahet.vatinfo.domain.Domain;
+import net.sahet.vatinfo.domain.mongo.Domain;
 
 //Impl postfix of the name on it compared to the core repository interface
 public class DomainRepositoryWithMongoTemplate {
