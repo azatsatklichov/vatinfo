@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 import net.sahet.vatinfo.domain.VatRate;
 import net.sahet.vatinfo.dto.Rate;
 import net.sahet.vatinfo.dto.VatRateResponse;
-import net.sahet.vatinfo.repository.VatRateRepository;
+import net.sahet.vatinfo.repository.mongo.VatRateRepository;
 
 @Service
 public class VatRateServiceImpl implements VatRateService {

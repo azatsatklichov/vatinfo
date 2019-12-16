@@ -1,4 +1,4 @@
-package net.sahet.vatinfo.repository;
+package net.sahet.vatinfo.repository.mongo;
 
 import java.util.List;
 

@@ -8,6 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class SpringSessionMongoDBController {
+	
+	/**
+	 * After MongoTemplate integration, we have Duration-String Conversion issue. 
+	 * 
+	 * 
+	 * But, even If mongo-session disabled in POM.xml,
+	 * in-memory key-value is used to manage the SESSION  
+	 */
 
 	/**
 	 * Spring Session provides an API and implementations for managing a user’s

@@ -4,8 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import net.sahet.vatinfo.domain.Domain;
-import net.sahet.vatinfo.repository.DomainRepository; 
-import net.sahet.vatinfo.repository.DomainRepositoryWithMongoTemplate;
+import net.sahet.vatinfo.repository.mongo.DomainRepository;
+import net.sahet.vatinfo.repository.mongo.DomainRepositoryWithMongoTemplate;
 
 @Service
 public class DomainService {
