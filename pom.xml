@@ -41,10 +41,15 @@
 		<!-- <dependency> <groupId>org.springframework.session</groupId> <artifactId>spring-session-data-mongodb</artifactId> 
 			</dependency> -->
 
-		<!-- using HAL as media type https://spring.io/projects/spring-data-rest -->
+		<!-- using HATEOAS, HAL as media type https://spring.io/projects/spring-data-rest -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-rest-hal-browser</artifactId>
+			<version>3.0.8.RELEASE</version>
 		</dependency>
 
 		<dependency>
