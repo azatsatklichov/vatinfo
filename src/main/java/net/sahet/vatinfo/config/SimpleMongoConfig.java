@@ -30,7 +30,7 @@ public class SimpleMongoConfig extends AbstractMongoConfiguration {
 
 	@Override
 	protected String getMappingBasePackage() {
-		return "net.sahet.vatinfo.repository";
+		return "net.sahet.vatinfo.repository.mongo";
 	}
 
 	@Override
@@ -43,17 +43,13 @@ public class SimpleMongoConfig extends AbstractMongoConfiguration {
 		return new MongoClient("localhost");
 	}
 
-//	@Bean
-//	public MongoTemplate mongoTemplate() throws Exception {
-//		return new MongoTemplate(mongo(), "test");
-//	}
-
 	/**
 	 * Note: We didn't need to define MongoTemplate bean in the previous
 	 * configuration as it's already defined in AbstractMongoConfiguration
 	 */
 	@Bean
 	public MongoTemplate mongoTemplate() throws Exception {
+		// return new MongoTemplate(mongo(), "test");
 		MongoTemplate mongoTemplate = new MongoTemplate(mongoDbFactory, getDefaultMongoConverter());
 		return mongoTemplate;
 	}
