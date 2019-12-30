@@ -3,7 +3,7 @@ echo %JAVA_HOME%
 set PATH=%PATH%%JAVA_HOME%
 echo %PATH%
 
-set JAVA_HOME=C:\Apps\Java\jdk-13
+set JAVA_HOME=C:\Apps\Java\jdk-10
 echo %JAVA_HOME%
 set PATH=%PATH%;%JAVA_HOME%\bin
 echo %PATH%

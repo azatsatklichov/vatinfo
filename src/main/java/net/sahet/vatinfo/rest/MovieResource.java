@@ -1,5 +1,6 @@
 package net.sahet.vatinfo.rest;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,8 +32,8 @@ public class MovieResource {
 	public String isertMovie(Movie movie) {
 		
 		movie.setId(23L);
-		movie.setName("Aygytly Adim");
-		movie.setActors(List.of("Eziz han - Muhammet Çerkezow", "Artyk - Baba Annanow", "Aýna - Žanna Smelýanskaýa",
+		movie.setName("Aygytly Adim"); 
+		movie.setActors(Arrays.asList("Eziz han - Muhammet Çerkezow", "Artyk - Baba Annanow", "Aýna - Žanna Smelýanskaýa",
 				"Mawy - Hommat Müllük", "Alty Garlyýew", "Aşyr - Artyk Jallyýew", "Pökgi bala - Akmyrat Bäşimow",
 				"Bally - Aleksandr Ýakubow"));
 		movie.setSazy(" Nury Halmämmedow ");

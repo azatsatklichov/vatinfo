@@ -16,14 +16,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.2.RELEASE</version>
+		<version>2.1.0.RELEASE</version><!--  2.2.2.RELEASE -->
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<java.version>13</java.version>
+		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
@@ -36,6 +36,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
+		<!-- to fix Java 13 -->
+		<!-- <dependency>
+			<groupId>org.springframework.plugin</groupId>
+			<artifactId>spring-plugin-core</artifactId>
+			<version>1.2.0.RELEASE</version>
+		</dependency> -->
 
 		<!-- how to use the Spring Session backed with MongoDB -->
 		<!-- <dependency> <groupId>org.springframework.session</groupId> <artifactId>spring-session-data-mongodb</artifactId> 
@@ -104,6 +111,12 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.7.0</version>
 		</dependency>
+		
+		<!-- <dependency> <groupId>io.springfox</groupId> <artifactId>springfox-swagger2</artifactId> 
+			<version>3.0.0-SNAPSHOT</version> </dependency> <dependency> <groupId>io.springfox</groupId> 
+			<artifactId>springfox-swagger-ui</artifactId> <version>3.0.0-SNAPSHOT</version> 
+			</dependency> <dependency> <groupId>io.springfox</groupId> <artifactId>springfox-data-rest</artifactId> 
+			<version>3.0.0-SNAPSHOT</version> </dependency> -->
 
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -150,15 +163,15 @@
 		</resources>
 		<plugins>
 
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.0</version>
 				<configuration>
-					<source>13</source>
-					<target>13</target>
+					<source>10</source>
+					<target>10</target>
 				</configuration>
-			</plugin>
+			</plugin> -->
 
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

@@ -2,6 +2,7 @@ package net.sahet.vatinfo.mix;
 
 import static org.junit.Assert.assertEquals;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -32,7 +33,7 @@ public class DiffMatchTest {
 		System.out.println(diff);
 
 		assertEquals(diff,
-				List.of("Diff(EQUAL,\"ABC\"), Diff(DELETE,\"DE\"), Diff(INSERT,\"FG\"), Diff(EQUAL,\"LMN\")"));
+				Arrays.asList("Diff(EQUAL,\"ABC\"), Diff(DELETE,\"DE\"), Diff(INSERT,\"FG\"), Diff(EQUAL,\"LMN\")"));
 	}
 
 	/**
