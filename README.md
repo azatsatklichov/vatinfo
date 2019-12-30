@@ -18,7 +18,7 @@ Just Precondition
 - Running Mongo DB localhost:27017 with TEST database is needed, in case not, just you may skipp some functionalities then 
 - run-set-java13home.bat 
 
-1. run "run.bat"  
+1. run "run-dev.bat"  
 
 
 #Testing
