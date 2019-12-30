@@ -1,4 +1,4 @@
-# VATINFO APPLICATION - https://github.com/azats/vatinfo
+# VATINFO APPLICATION - https://github.com/azatsatklichov/vatinfo
 
  VatInfo Application to get Standard VAT Rates for countries with defined  criteria
  
