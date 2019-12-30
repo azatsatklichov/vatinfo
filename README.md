@@ -20,20 +20,18 @@ Just Precondition
 1. run "run-dev.bat"  
 
 
-#Testing
+# Testing
 
 1. Browse for highest and lowest Standard VAT 
 
 http://localhost:9091/vatRates?count=5
-
 http://localhost:9091/vatRates?count=12
 
-2. with prod-profile (under progress)
- 
-http://localhost:9091/vatRates?count=12
+2. Use Swagger to test the application
 
+http://localhost:9091/swagger-ui.html
 
-2. Or just use POSTMAN client  with GET method 
+3. Or just use POSTMAN client  with GET method 
 http://localhost:9091/vatRates
 
 Response:
@@ -54,6 +52,8 @@ Response:
 
 http://localhost:9091/vatRates?count=5
 
+Response:
+
 {
     "CountriesWithHighestStandardVATRates": [
         "Luxembourg",
@@ -72,21 +72,17 @@ http://localhost:9091/vatRates?count=5
 }
 
 
-3. Use Swagger to test the application
-
-http://localhost:9091/swagger-ui.html
-
-
-3. Browse for Mongo: e.g. http://localhost:9090/getCustomers?firstName=Alana&lastName=tolsto
+4. Browse for Mongo: e.g. http://localhost:9090/getCustomers?firstName=Alana&lastName=tolsto
  
-
-4. Integration tests  - VatInfoAppRestTemplateTest
+5. Integration tests  - VatInfoAppRestTemplateTest
 To run the integration test, application should be running 
 > Run VatInfoAppTest.java 
  
-
+6. with prod-profile (under progress)
+ 
+http://localhost:9091/vatRates?count=12
   
-#TODO
+# TODO
  - adjust profiles
  - improve Spring Data Mongo  
  - Spring Sessions, Security etc. 
