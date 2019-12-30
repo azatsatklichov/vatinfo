@@ -10,10 +10,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import net.sahet.vatinfo.domain.VatRate;
+import net.sahet.vatinfo.domain.mongo.VatRate;
 import net.sahet.vatinfo.dto.Rate;
 import net.sahet.vatinfo.dto.VatRateResponse;
-import net.sahet.vatinfo.repository.VatRateRepository;
+import net.sahet.vatinfo.repository.mongo.VatRateRepository;
 
 @Service
 public class VatRateServiceImpl implements VatRateService {
@@ -22,7 +22,7 @@ public class VatRateServiceImpl implements VatRateService {
 	private String vatSourceFromUrl;
 
 	@Autowired
-	private VatRateRepository vatRateService;
+	private VatRateRepository vatRateRepository;
 
 	@Override
 	public VatRateResponse process() {
@@ -52,9 +52,9 @@ public class VatRateServiceImpl implements VatRateService {
 	}
 
 	public void addVatRate(VatRate vatRate) {
-		vatRateService.save(vatRate);
+		vatRateRepository.save(vatRate);
 		System.out.println("-------------------------------");
-		List<VatRate> findAll = vatRateService.findAll();
+		List<VatRate> findAll = vatRateRepository.findAll();
 		findAll.stream().forEach(System.out::println);
 	}
 

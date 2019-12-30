@@ -1,8 +1,6 @@
 package net.sahet.vatinfo.config;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.session.web.http.DefaultCookieSerializer;
 
 @Configuration
 public class HttpSessionConfig {
@@ -41,12 +39,12 @@ public class HttpSessionConfig {
 	 * 
 	 * @return
 	 */
-	@Bean
-	public DefaultCookieSerializer customCookieSerializer() {
-		DefaultCookieSerializer cookieSerializer = new DefaultCookieSerializer();
-
-		cookieSerializer.setUseHttpOnlyCookie(false);
-
-		return cookieSerializer;
-	}
+	/*
+	 * @Bean public DefaultCookieSerializer customCookieSerializer() {
+	 * DefaultCookieSerializer cookieSerializer = new DefaultCookieSerializer();
+	 * 
+	 * cookieSerializer.setUseHttpOnlyCookie(false);
+	 * 
+	 * return cookieSerializer; }
+	 */
 }

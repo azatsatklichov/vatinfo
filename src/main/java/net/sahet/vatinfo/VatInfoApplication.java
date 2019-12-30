@@ -6,17 +6,15 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
- * VatInfo Application to get Standard VAT Rates for countries with defined
- * criteria
  * 
- * @author azat satklichov
+ * @author Azat Satklichov
  *
  */
 @SpringBootApplication
 @EnableSwagger2
 public class VatInfoApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(VatInfoApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(VatInfoApplication.class, args);
+	}
 }

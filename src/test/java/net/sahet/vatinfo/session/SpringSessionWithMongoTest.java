@@ -10,7 +10,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.util.Assert;
 import org.springframework.web.client.RestTemplate;
 
-import net.sahet.vatinfo.repository.CustomerRepository;
+import net.sahet.vatinfo.repository.mongo.CustomerRepository;
 
 public class SpringSessionWithMongoTest {
 

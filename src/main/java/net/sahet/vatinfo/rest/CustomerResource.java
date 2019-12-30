@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import lombok.extern.slf4j.Slf4j;
-import net.sahet.vatinfo.domain.Customer;
+import net.sahet.vatinfo.domain.mongo.Customer;
 import net.sahet.vatinfo.service.CustomerService;
 
 @Slf4j

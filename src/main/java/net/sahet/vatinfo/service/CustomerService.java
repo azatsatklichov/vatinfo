@@ -1,14 +1,13 @@
 package net.sahet.vatinfo.service;
 
 import java.util.List;
-import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 //import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-import net.sahet.vatinfo.domain.Customer;
-import net.sahet.vatinfo.repository.CustomerRepository;
+import net.sahet.vatinfo.domain.mongo.Customer;
+import net.sahet.vatinfo.repository.mongo.CustomerRepository;
 
 @Service
 //@Profile("prod")

@@ -1,4 +1,4 @@
-package net.sahet.vatinfo.domain;
+package net.sahet.vatinfo.domain.mongo;
 
 import org.springframework.data.annotation.Id;
 
