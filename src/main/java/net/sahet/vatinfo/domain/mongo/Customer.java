@@ -2,25 +2,22 @@ package net.sahet.vatinfo.domain.mongo;
 
 import org.springframework.data.annotation.Id;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@Data
 public class Customer {
 
-	@Id
-	public String id;
+    @Id
+    private String id;
 
-	public String firstName;
-	public String lastName;
+    private String firstName;
+    private String lastName;
 
-	public Customer() {
-	}
-
-	public Customer(String firstName, String lastName) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-	}
-
-	@Override
-	public String toString() {
-		return String.format("Customer[id=%s, firstName='%s', lastName='%s']", id, firstName, lastName);
-	}
+    public Customer(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
 }

@@ -4,24 +4,26 @@ import java.util.List;
 
 import org.springframework.data.annotation.Id;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@Data
 public class VatRate {
 
-	@Id
-	public String id;
- 
-	public List<String> vatRates;
- 
+    @Id
+    private String id;
 
-	public VatRate() {
-	}
-	public VatRate(String id, List<String> vatRates) {
-		this.id = id;
-		this.vatRates = vatRates;
-	}
+    private List<String> vatRates;
 
-	@Override
-	public String toString() {
-		return String.format("VateRate[id=%s, vatRates='%s']", id, vatRates);
-	}
+    public VatRate(String id, List<String> vatRates) {
+        this.id = id;
+        this.vatRates = vatRates;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("VateRate[id=%s, vatRates='%s']", id, vatRates);
+    }
 
 }

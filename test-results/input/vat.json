@@ -419,6 +419,13 @@
 			"country_code": "NL",
 			"periods": [
 				{
+					"effective_from": "2019-01-01",
+					"rates": {
+						"reduced": 9.0,
+						"standard": 21.0
+					}
+				},
+				{
 					"effective_from": "2012-10-01",
 					"rates": {
 						"reduced": 6.0,

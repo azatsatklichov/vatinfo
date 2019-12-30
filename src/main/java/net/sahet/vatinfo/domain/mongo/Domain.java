@@ -4,24 +4,20 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Getter
-@Setter
 @Document(collection = "domain")
+@Data
+@NoArgsConstructor
 public class Domain {
 
-	@Id
-	private long id;
+    @Id
+    private long id;
 
-	@Indexed(unique = true)
-	private String domain;
+    @Indexed(unique = true)
+    private String domain;
 
-	private boolean displayAds;
+    private boolean displayAds;
 
-	@Override
-	public String toString() {
-		return "Domain{" + "id=" + id + ", domain='" + domain + '\'' + ", displayAds=" + displayAds + '}';
-	}
 }

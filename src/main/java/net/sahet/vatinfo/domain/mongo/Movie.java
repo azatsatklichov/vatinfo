@@ -6,26 +6,22 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
 
 @Document(collection = "kino")
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
-@ToString
 @NoArgsConstructor
 public class Movie {
 
-	@Id
-	public Long id;
+    @Id
+    private Long id;
 
-	private String name;
+    private String name;
 
-	private String sazy;
+    private String sazy;
 
-	public List<String> actors;
+    private List<String> actors;
 
 }

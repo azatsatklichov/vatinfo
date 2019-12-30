@@ -16,23 +16,23 @@ import net.sahet.vatinfo.service.CustomerService;
 
 @Slf4j
 @RestController
-//@Profile("prod")
+// @Profile("prod")
 public class CustomerResource {
 
-	@Autowired
-	CustomerService customerService;
+    @Autowired
+    private CustomerService customerService;
 
-	@ResponseBody
-	@RequestMapping(value = "/getCustomers", method = RequestMethod.GET)
-	public List<Customer> getCustomers(@RequestParam(name = "firstName") String firstName,
-			@RequestParam(name = "lastName") String lastName, Map<String, Object> model) {
+    @ResponseBody
+    @RequestMapping(value = "/getCustomers", method = RequestMethod.GET)
+    public List<Customer> getCustomers(@RequestParam(name = "firstName") String firstName,
+            @RequestParam(name = "lastName") String lastName, Map<String, Object> model) {
 
-		log.debug("getCustomers ... ");
+        log.debug("getCustomers ... ");
 
-		List<Customer> list = customerService.getCustomers(firstName, lastName);
+        List<Customer> list = customerService.getCustomers(firstName, lastName);
 
-		return list;
+        return list;
 
-	}
+    }
 
 }
