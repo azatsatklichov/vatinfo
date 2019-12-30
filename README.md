@@ -7,15 +7,17 @@ Implement an application in Java capable of printing out three EU countries with
 the highest standard VAT rate as of today within the EU.  Input: http://jsonvat.com/
 
 # Solution 
-Java8 and SpringBoot is used to solve the task and implement the respective components. 
+Java13 and SpringBoot is used to solve the task and implement the respective components. 
 To make the application extensible for future,  application left open for easily extending with points like security, web templates e.g. thymeleaf, swagger, HAL, Spring Data JPA, Spring Session, Spring Data Mongo to decrease the coding etc.  Also, swagger is provided, in case project is extended with more REST services later
 
 
 # How to setup/run/test application
 Checkout the GitHub project, and just Java8 is needed in advance, then just from command line tool 
 
-0. Running Mongo DB localhost:27017 with TEST database is needed, in case not, just you may skipp some functionalities then 
- 
+Just Precondition 
+- Running Mongo DB localhost:27017 with TEST database is needed, in case not, just you may skipp some functionalities then 
+- run-set-java13home.bat 
+
 1. run "run.bat"  
 
 
