@@ -87,3 +87,20 @@ http://localhost:9091/vatRates?count=12
  - improve Spring Data Mongo  
  - Spring Sessions, Security etc. 
 
+
+
+
+TODO BE
+-----
+-Thymeleaf
+-PDF
+-Mail services
+-Properties with Spring and Spring Boot - https://www.baeldung.com/properties-with-spring 
+ 
+TODO FE 
+-----
+Angular/TS client 
+Node.js 
+Mongo DB 
+
+ 
