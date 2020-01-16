@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jms.annotation.EnableJms;
 import org.springframework.jms.config.DefaultJmsListenerContainerFactory;
 import org.springframework.jms.config.JmsListenerContainerFactory;
+import org.springframework.jms.connection.CachingConnectionFactory;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.support.converter.MappingJackson2MessageConverter;
 import org.springframework.jms.support.converter.MessageConverter;
@@ -45,9 +46,14 @@ public class JmsConfig {
 	}
 
 	@Bean
+	public CachingConnectionFactory cachingConnectionFactory() {
+		return new CachingConnectionFactory(connectionFactory());
+	}
+
+	@Bean
 	public JmsTemplate jmsTemplate() {
 		JmsTemplate template = new JmsTemplate();
-		template.setConnectionFactory(connectionFactory());
+		template.setConnectionFactory(cachingConnectionFactory()); // connectionFactory()
 		return template;
 	}
 
@@ -63,6 +69,13 @@ public class JmsConfig {
 	public JmsListenerContainerFactory<?> myFactory(ActiveMQConnectionFactory connectionFactory,
 			DefaultJmsListenerContainerFactoryConfigurer configurer) {
 		DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
+
+		/**
+		 * By default, Spring Boot creates a JmsTemplate configured to transmit to
+		 * queues by having pubSubDomain set to false. Below is not help even you set
+		 * TRUE, must be done under jmsListenerContainerFactory
+		 */
+		// factory.setPubSubDomain(true);
 		setConnInfo(connectionFactory);
 		configurer.configure(factory, connectionFactory);
 		return factory;
@@ -76,11 +89,18 @@ public class JmsConfig {
 		return converter;
 	}
 
+	/**
+	 * Also on the ListenerContainer, we need to indicate if we want to use queues
+	 * or topics.
+	 * 
+	 * @return
+	 */
 	@Bean
 	public DefaultJmsListenerContainerFactory jmsListenerContainerFactory() {
 		DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
 		factory.setConnectionFactory(connectionFactory());
 		factory.setConcurrency("1-1");
+		factory.setPubSubDomain(true);
 		return factory;
 	}
 

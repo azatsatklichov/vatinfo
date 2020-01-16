@@ -47,6 +47,19 @@
 			<groupId>org.apache.activemq</groupId>
 			<artifactId>activemq-broker</artifactId>
 		</dependency> -->
+		
+		
+		 <!-- Solace Messaging queue and topic -->
+		<!-- <dependency>
+			<groupId>com.solacesystems</groupId>
+			<artifactId>sol-jms</artifactId>
+			<version>10.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.solacesystems</groupId>
+			<artifactId>sol-jcsmp</artifactId>
+			<version>10.4.0</version>
+		</dependency> -->
 
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>

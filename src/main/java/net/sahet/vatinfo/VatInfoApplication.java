@@ -20,7 +20,15 @@ public class VatInfoApplication {
 		JmsTemplate jmsTemplate = context.getBean(JmsTemplate.class);
 
 		System.out.println("Sending an email message.");
-		// jmsTemplate.convertAndSend("mailbox", new Email("azatas@seznam.cz", "Ymyt, Zahmet, Niyet, Towekgel"));
-		jmsTemplate.convertAndSend("inbound.queue", "Ymyt, Zahmet, Niyet, Towekgel");
+		// jmsTemplate.convertAndSend("mailbox", new Email("azatas@seznam.cz", "Ymyt,
+		// Zahmet, Niyet, Towekgel"));
+		
+		//QUEUE
+		//jmsTemplate.convertAndSend("inbound.queue", "Ymyt, Zahmet, Niyet, Towekgel");
+
+
+		//TOPIC
+		jmsTemplate.setPubSubDomain(true);
+		jmsTemplate.convertAndSend("inbound.topic", "TOPIC: Ymyt, Zahmet, Niyet, Towekgel");
 	}
 }
