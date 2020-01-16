@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.jms.core.JmsTemplate;
 
-import net.sahet.vatinfo.dto.Email;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
@@ -21,6 +20,7 @@ public class VatInfoApplication {
 		JmsTemplate jmsTemplate = context.getBean(JmsTemplate.class);
 
 		System.out.println("Sending an email message.");
-		jmsTemplate.convertAndSend("mailbox", new Email("azatas@seznam.cz", "Ymyt, Zahmet, Niyet, Towekgel"));
+		// jmsTemplate.convertAndSend("mailbox", new Email("azatas@seznam.cz", "Ymyt, Zahmet, Niyet, Towekgel"));
+		jmsTemplate.convertAndSend("mailbox", "Ymyt, Zahmet, Niyet, Towekgel");
 	}
 }

@@ -1,7 +1,5 @@
 package net.sahet.vatinfo.config;
 
-import javax.jms.ConnectionFactory;
-
 import org.apache.activemq.ActiveMQConnectionFactory;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.jms.DefaultJmsListenerContainerFactoryConfigurer;
@@ -53,13 +51,13 @@ public class JmsConfig {
 		return template;
 	}
 
-	@Bean
-	public JmsListenerContainerFactory<?> myFactory(ConnectionFactory connectionFactory,
-			DefaultJmsListenerContainerFactoryConfigurer configurer) {
-		DefaultJmsListenerContainerFactory factory = new DefaultJmsListenerContainerFactory();
-		configurer.configure(factory, connectionFactory);
-		return factory;
-	}
+	/*
+	 * @Bean public JmsListenerContainerFactory<?> myFactory(ConnectionFactory
+	 * connectionFactory, DefaultJmsListenerContainerFactoryConfigurer configurer) {
+	 * DefaultJmsListenerContainerFactory factory = new
+	 * DefaultJmsListenerContainerFactory(); configurer.configure(factory,
+	 * connectionFactory); return factory; }
+	 */
 
 	@Bean
 	public JmsListenerContainerFactory<?> myFactory(ActiveMQConnectionFactory connectionFactory,

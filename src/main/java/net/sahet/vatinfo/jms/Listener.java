@@ -26,7 +26,7 @@ public class Listener {
 			TextMessage textMessage = (TextMessage) jsonMessage;
 			messageData = textMessage.getText();
 			Map map = new Gson().fromJson(messageData, Map.class);
-			response = "Hello " + map.get("name");
+			response = "---> Hello " + map.get("name");
 		}
 		return response;
 
