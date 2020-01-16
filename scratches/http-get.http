@@ -14,6 +14,17 @@ GET http://localhost:9091/vatRates?count=12
 GET http://localhost:9091/getCustomers?firstName=Alana&lastName=tolsto
 
 ###
+HATEOAS, Hal browser
+http://localhost:9091/users
+http://localhost:9091/books
+
+##JMS Admin
+http://localhost:8161/admin/index.jsp
+
+
+# Swagger
+http://localhost:9091/swagger-ui.html
+
 
 
 

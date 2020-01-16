@@ -76,9 +76,16 @@ Response:
 }
 
 
+3. HATEOAS testing 
+
+http://localhost:9091/users
+http://localhost:9091/books
+
 4. Browse for Mongo: e.g. http://localhost:9090/getCustomers?firstName=Alana&lastName=tolsto
 
-4. For messaging see: http://localhost:8161/admin/index.jsp
+4'. For messaging see: http://localhost:8161/admin/index.jsp
+
+
  
 5. Integration tests  - VatInfoAppRestTemplateTest
 To run the integration test, application should be running 

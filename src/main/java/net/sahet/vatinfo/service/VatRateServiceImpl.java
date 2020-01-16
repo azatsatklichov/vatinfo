@@ -7,15 +7,18 @@ import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import lombok.extern.slf4j.Slf4j;
 import net.sahet.vatinfo.domain.mongo.VatRate;
 import net.sahet.vatinfo.dto.Rate;
 import net.sahet.vatinfo.dto.VatRateResponse;
 import net.sahet.vatinfo.repository.mongo.VatRateRepository;
 
 @Service
+@Slf4j
 public class VatRateServiceImpl implements VatRateService {
 
 	@Value("${vat.json.source.url}")
@@ -23,6 +26,9 @@ public class VatRateServiceImpl implements VatRateService {
 
 	@Autowired
 	private VatRateRepository vatRateRepository;
+
+	@Autowired
+	JmsTemplate jmsTemplate;
 
 	@Override
 	public VatRateResponse process() {
@@ -36,6 +42,10 @@ public class VatRateServiceImpl implements VatRateService {
 		if (rates == null) {
 			return Collections.emptyList();
 		}
+		
+
+		log.info("Vat rates are under being processed");
+		jmsTemplate.convertAndSend("mailbox", "VAT Rates are processed");
 
 		if (count < rates.size()) {
 			if (highestVat) {
@@ -47,6 +57,7 @@ public class VatRateServiceImpl implements VatRateService {
 						.limit(count).map(Rate::getName).collect(Collectors.toList());
 			}
 		}
+
 
 		return rates.stream().map(Rate::getName).collect(Collectors.toList());
 	}
