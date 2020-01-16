@@ -1,5 +1,7 @@
 package net.sahet.vatinfo.jms;
 
+import java.util.concurrent.CountDownLatch;
+
 import javax.jms.Destination;
 import javax.jms.TextMessage;
 
@@ -22,6 +24,12 @@ public class Receiver {
 	@Autowired
 	private JmsTemplate jmsTemplate;
 
+	private CountDownLatch latch = new CountDownLatch(1);
+
+	public CountDownLatch getLatch() {
+		return latch;
+	}
+
 	@JmsListener(destination = "destination.order")
 	public void receiveOrder(String orderNumber, @Header(JmsHeaders.MESSAGE_ID) String messageId) {
 		log.info("received OrderNumber='{}' with MessageId='{}'", orderNumber, messageId);
@@ -33,5 +41,11 @@ public class Receiver {
 			message.setJMSCorrelationID(messageId);
 			return message;
 		});
+	}
+
+	@JmsListener(destination = "inbound.topic")
+	public void receive(String message) {
+		log.info("received message='{}'", message);
+		latch.countDown();
 	}
 }

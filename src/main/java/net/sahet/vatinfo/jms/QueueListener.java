@@ -18,6 +18,9 @@ public class QueueListener {
 	 * DefaultMessageListenerContainer with a cache-based connection factory, so you
 	 * can consume messages asynchronously and with maximum connection efficiency.
 	 * 
+	 * The @JmsListener annotation creates a message listener container for the
+	 * annotated receive() method.
+	 * 
 	 * @param jsonMessage
 	 * @return
 	 * @throws JMSException

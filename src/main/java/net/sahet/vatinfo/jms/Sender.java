@@ -43,4 +43,9 @@ public class Sender {
 
 		return status;
 	}
+
+	public void send(String destination, String message) {
+		log.info("sending message='{}' to destination='{}'", message, destination);
+		jmsTemplate.convertAndSend(destination, message);
+	}
 }
