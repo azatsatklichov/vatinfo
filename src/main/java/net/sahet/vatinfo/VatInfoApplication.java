@@ -21,6 +21,6 @@ public class VatInfoApplication {
 
 		System.out.println("Sending an email message.");
 		// jmsTemplate.convertAndSend("mailbox", new Email("azatas@seznam.cz", "Ymyt, Zahmet, Niyet, Towekgel"));
-		jmsTemplate.convertAndSend("mailbox", "Ymyt, Zahmet, Niyet, Towekgel");
+		jmsTemplate.convertAndSend("inbound.queue", "Ymyt, Zahmet, Niyet, Towekgel");
 	}
 }

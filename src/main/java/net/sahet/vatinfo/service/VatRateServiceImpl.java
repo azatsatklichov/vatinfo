@@ -45,7 +45,7 @@ public class VatRateServiceImpl implements VatRateService {
 		
 
 		log.info("Vat rates are under being processed");
-		jmsTemplate.convertAndSend("mailbox", "VAT Rates are processed");
+		jmsTemplate.convertAndSend("hat-habar-queue", "VAT Rates are processed");
 
 		if (count < rates.size()) {
 			if (highestVat) {
