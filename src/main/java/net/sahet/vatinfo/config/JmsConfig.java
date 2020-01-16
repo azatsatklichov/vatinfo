@@ -1,6 +1,9 @@
 package net.sahet.vatinfo.config;
 
+import javax.jms.Destination;
+
 import org.apache.activemq.ActiveMQConnectionFactory;
+import org.apache.activemq.command.ActiveMQQueue;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.jms.DefaultJmsListenerContainerFactoryConfigurer;
 import org.springframework.context.annotation.Bean;
@@ -16,6 +19,19 @@ import org.springframework.jms.support.converter.MessageType;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * by default:
+ * 
+ * Dynamic destination creation is set to queues.
+ * 
+ * JMS Sessions are “not transacted” and “auto-acknowledged”.
+ * 
+ * The template uses a DynamicDestinationResolver and a SimpleMessageConverter.
+ * 
+ * 
+ * @author ASatklichov
+ *
+ */
 @EnableJms
 @Configuration
 @Slf4j
@@ -45,15 +61,40 @@ public class JmsConfig {
 		connectionFactory.setBrokerURL(brokerUrl);
 	}
 
+	/**
+	 * By default, it uses a single session to create many connections. If you need
+	 * to scale further, you can also specify the number of sessions to cache using
+	 * the sessionCacheSize property.
+	 * 
+	 * @return
+	 */
 	@Bean
 	public CachingConnectionFactory cachingConnectionFactory() {
-		return new CachingConnectionFactory(connectionFactory());
+		CachingConnectionFactory cachingConnectionFactory = new CachingConnectionFactory(connectionFactory());
+		/**
+		 * not forget to set the sessionCacheSize if you need to scale.
+		 */
+		cachingConnectionFactory.setSessionCacheSize(5);
+		return cachingConnectionFactory;
+	}
+
+	@Bean
+	public Destination statusDestination() {
+		return new ActiveMQQueue("statusDestination");
+	}
+
+	@Bean
+	public Destination orderDestination() {
+		return new ActiveMQQueue("orderDestination");
 	}
 
 	@Bean
 	public JmsTemplate jmsTemplate() {
 		JmsTemplate template = new JmsTemplate();
 		template.setConnectionFactory(cachingConnectionFactory()); // connectionFactory()
+
+		// template.setDefaultDestination(orderDestination());
+
 		return template;
 	}
 
