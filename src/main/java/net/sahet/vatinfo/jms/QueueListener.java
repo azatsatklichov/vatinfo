@@ -9,7 +9,7 @@ import org.springframework.messaging.handler.annotation.SendTo;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Listener {
+public class QueueListener {
 
 	@JmsListener(destination = "inbound.queue")
 	@SendTo("outbound.queue")
