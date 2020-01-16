@@ -8,7 +8,11 @@ the highest standard VAT rate as of today within the EU.  Input: http://jsonvat.
 
 # Solution 
 Java and SpringBoot is used to solve the task and implement the respective components. 
-To make the application extensible for future,  application left open for easily extending with points like security, web templates e.g. thymeleaf, swagger, HAL, Spring Data JPA, Spring Session, Spring Data Mongo to decrease the coding etc.  Also, swagger is provided, in case project is extended with more REST services later
+
+Also project is enhanced with integrating with multiple tools
+To make the application extensible for future,  application left open for easily extending with points like security, web templates e.g. thymeleaf, swagger, HAL, 
+Spring Data JPA with h2 and Mongo, Spring Session, Spring Data Mongo to decrease the coding etc.  Also, swagger is provided, in case project is extended with more REST services later
+For JMS Active MQ is integrated 
 
 
 # How to setup/run/test application
@@ -73,6 +77,8 @@ Response:
 
 
 4. Browse for Mongo: e.g. http://localhost:9090/getCustomers?firstName=Alana&lastName=tolsto
+
+4. For messaging see: http://localhost:8161/admin/index.jsp
  
 5. Integration tests  - VatInfoAppRestTemplateTest
 To run the integration test, application should be running 
@@ -95,8 +101,8 @@ TODO BE
 -Thymeleaf
 -PDF
 -Mail services
--Properties with Spring and Spring Boot - https://www.baeldung.com/properties-with-spring 
- 
+e etc 
+
 TODO FE 
 -----
 Angular/TS client 
