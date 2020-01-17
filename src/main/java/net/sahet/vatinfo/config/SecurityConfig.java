@@ -14,7 +14,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-	// https://howtodoinjava.com/spring-boot2/security-rest-basic-auth-example/
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 		http.csrf().disable().authorizeRequests().anyRequest().authenticated().and().httpBasic();
@@ -23,15 +22,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
 		auth.inMemoryAuthentication().withUser("user1").password(passwordEncoder().encode("user1"))
-				.authorities("ROLE_USER");
+				.authorities("ROLE_USER");// {noop}password }
 	}
-
-	/*
-	 * @Autowired public void configureGlobal(AuthenticationManagerBuilder auth)
-	 * throws Exception {
-	 * auth.inMemoryAuthentication().withUser("admin").password("admin").roles(
-	 * "USER");// {noop}password }
-	 */
 
 	@Bean
 	public PasswordEncoder passwordEncoder() {
