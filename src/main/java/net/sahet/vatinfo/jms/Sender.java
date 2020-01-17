@@ -12,6 +12,15 @@ import org.springframework.stereotype.Component;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * JMS Producer
+ * 
+ * This class will parse the Json message and extract the value against key name
+ * and send greeting message to the outbound queue.
+ * 
+ * @author ASatklichov
+ *
+ */
 @Slf4j
 @Component
 public class Sender {

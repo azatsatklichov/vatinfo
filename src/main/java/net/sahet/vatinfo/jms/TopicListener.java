@@ -15,6 +15,7 @@ import com.google.gson.Gson;
 @Component
 public class TopicListener {
 
+	//Producer and Consumer at the same time 
 	@JmsListener(destination = "inbound.topic")
 	@SendTo("outbound.topic")
 	public String receiveMessageFromTopic(final Message jsonMessage) throws JMSException {

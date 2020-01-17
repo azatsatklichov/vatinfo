@@ -17,9 +17,11 @@ For JMS Active MQ is integrated
 
 # How to setup/run/test application
 Checkout the GitHub project, and just Java8 is needed in advance, then just from command line tool 
-
-Just Precondition 
-- Running Mongo DB localhost:27017 with TEST database is needed, in case not, just you may skipp some functionalities then 
+ 
+0. Precondition  
+- Installation and Running Mongo DB localhost:27017 with TEST database is needed 
+- ActiveMQ is needed to be installed and started (or there is an option of using in-memory broker)
++ In memory H2 database is embedded automatically  
 
 1. run "run-dev.bat"  
 
@@ -99,6 +101,7 @@ http://localhost:9091/vatRates?count=12
  - adjust profiles
  - improve Spring Data Mongo  
  - Spring Sessions, Security etc. 
+ 
 
 
 

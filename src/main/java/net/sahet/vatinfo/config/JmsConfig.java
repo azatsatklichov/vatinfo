@@ -46,6 +46,11 @@ public class JmsConfig {
 	@Value("${spring.activemq.broker-url}")
 	private String brokerUrl;
 
+	/**
+	 * ActiveMQConnectionFactory: It is used for creating connections.
+	 * 
+	 * @return
+	 */
 	@Bean
 	public ActiveMQConnectionFactory connectionFactory() {
 		ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory();
@@ -131,6 +136,10 @@ public class JmsConfig {
 	}
 
 	/**
+	 * It is responsible to create the listener container responsible for a
+	 * particular endpoint.
+	 * 
+	 * 
 	 * Also on the ListenerContainer, we need to indicate if we want to use queues
 	 * or topics.
 	 * 
