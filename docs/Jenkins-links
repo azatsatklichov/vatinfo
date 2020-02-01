@@ -1,0 +1,39 @@
+
+
+https://jenkins.io/doc/book/pipeline/
+https://jenkins.io/changelog-stable/
+https://updates.jenkins.io/experimental/
+
+https://github.com/g0t4/jenkins2-course-spring-boot/tree/master/spring-boot-samples	
+
+Update plugin: https://updates.jenkins.io/update-center.json
+
+--running Jenkins on docker:  Official Jenkins Docker image
+https://hub.docker.com/r/jenkins/jenkins
+https://github.com/jenkinsci/docker/blob/master/README.md
+
+1) via docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins
+docker run -p 8090:8080 -p 50000:50000 jenkins/jenkins
+
+>use Dashboard Inspect 
+>http://localhost:8090/
+>http://localhost:50000/
+
+2) via kitematic  and look:  C:\Users\asatklichov\Documents\Kitematic\jenkins\var 
+
+>docker container ls  (find the port mapped)
+http://localhost:32774/
+
+
+
+---- Maven is missing -- 
+1-way: https://hub.docker.com/_/maven
+docker run -it --rm --name my-maven-project -v "$(pwd)":/usr/src/mymaven -w /usr/src/mymaven maven:3.3-jdk-8 mvn clean install
+
+2-way https://github.com/carlossg/docker-maven
+Reusing the Maven local repository
+The local Maven repository can be reused across containers by creating a volume and mounting it in /root/.m2.
+
+docker volume create --name maven-repo
+docker run -it -v maven-repo:/root/.m2 maven mvn archetype:generate # will download artifacts
+docker run -it -v maven-repo:/root/.m2 maven mvn archetype:generate # will reuse downloaded artifacts
