@@ -50,7 +50,7 @@ public class DiffMatchTest extends AbstractTest {
         String diff = StringUtils.difference(text1, text2);
         System.out.println(diff);
 
-        assertEquals("FGLMN", diff);
+        assertEquals("FGLMNs", diff);
     }
 
 }
