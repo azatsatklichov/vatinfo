@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class QueueListener {
 
+	//Producer and Consumer at the same time 
 	/**
 	 * Spring’s JmsTemplate can receive messages directly through its receive
 	 * method, but that only works synchronously, meaning it will block. That’s why
@@ -20,6 +21,13 @@ public class QueueListener {
 	 * 
 	 * The @JmsListener annotation creates a message listener container for the
 	 * annotated receive() method.
+	 * 
+	 * JMS Producer
+	 * 
+	 * Spring boot provides a very convenient way to send message to a destined
+	 * queue.Since the introduction of @SendTo annotation, it only requires the
+	 * queue name in the parameter to send messages
+	 * 
 	 * 
 	 * @param jsonMessage
 	 * @return
@@ -43,6 +51,13 @@ public class QueueListener {
 			response = messageData;
 			System.out.println("### QUEUE listened ###  message" + response);
 		}
+		/**
+		 * JMS Producer
+		 * 
+		 * Spring boot provides a very convenient way to send message to a destined
+		 * queue.Since the introduction of @SendTo annotation, it only requires the
+		 * queue name in the parameter to send messages
+		 */
 		return response;
 
 	}
