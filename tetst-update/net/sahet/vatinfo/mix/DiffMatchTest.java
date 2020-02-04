@@ -10,15 +10,13 @@ import org.bitbucket.cowwoc.diffmatchpatch.DiffMatchPatch;
 import org.bitbucket.cowwoc.diffmatchpatch.DiffMatchPatch.Diff;
 import org.junit.Test;
 
-import net.sahet.vatinfo.base.AbstractTest;
-
 /**
  * Difference Between Two Strings in Java
  * 
  * https://www.baeldung.com/java-difference-between-two-strings
  *
  */
-public class DiffMatchTest extends AbstractTest {
+public class DiffMatchTest {
 
     /**
      * The first one is a library written by Google called diff-match-patch. As they
