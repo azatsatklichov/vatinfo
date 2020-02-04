@@ -14,6 +14,7 @@ To make the application extensible for future,  application left open for easily
 Spring Data JPA with h2 and Mongo, Spring Session, Spring Data Mongo to decrease the coding etc.  Also, swagger is provided, in case project is extended with more REST services later
 For JMS Active MQ is integrated 
 Added Jenkinsfile - pipelined  project
+Mail via: FakeSMTP or MailHog (On Win/Linux or Docker ) http://localhost:8025/
 
 
 # How to setup/run/test application
