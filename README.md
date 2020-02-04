@@ -40,7 +40,7 @@ http://localhost:9091/vatRates?count=12
 http://localhost:9091/swagger-ui.html
 
 3. Or just use POSTMAN client  with GET method 
-http://localhost:9091/vatRates
+http://localhost:9091/vatRates 
 
 Response:
 
