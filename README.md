@@ -13,7 +13,7 @@ Also project is enhanced with integrating with multiple tools
 To make the application extensible for future,  application left open for easily extending with points like security, web templates e.g. thymeleaf, swagger, HAL, 
 Spring Data JPA with h2 and Mongo, Spring Session, Spring Data Mongo to decrease the coding etc.  Also, swagger is provided, in case project is extended with more REST services later
 For JMS Active MQ is integrated 
-Added Jenkinsfile - pipelined project
+Added Jenkinsfile - pipelined  project
 
 
 # How to setup/run/test application
