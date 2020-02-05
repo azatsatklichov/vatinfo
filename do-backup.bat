@@ -1,0 +1,1 @@
+tar -czf ../vatinfo_copy.tgz ../vatinfo
