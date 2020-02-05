@@ -10,11 +10,13 @@ the highest standard VAT rate as of today within the EU.  Input: http://jsonvat.
 Java and SpringBoot is used to solve the task and implement the respective components. 
 
 Also project is enhanced with integrating with multiple tools
-To make the application extensible for future,  application left open for easily extending with points like security, web templates e.g. thymeleaf, swagger, HAL, 
-Spring Data JPA with h2 and Mongo, Spring Session, Spring Data Mongo to decrease the coding etc.  Also, swagger is provided, in case project is extended with more REST services later
-For JMS Active MQ is integrated 
-Added Jenkinsfile - pipelined  project
-Mail via: FakeSMTP or MailHog (On Win/Linux or Docker ) http://localhost:8025/
+- To make the application extensible for future,  application left open for easily extending with points like security, web templates 
+e.g. thymeleaf, swagger, HAL browser. 
+- Spring Data REST (HATEOAS), Spring Data JPA with h2 and Mongo, Spring Session, Spring Data Mongo to decrease the coding etc.  
+- Also, swagger is provided for microservice documentation, in case project is extended with more REST services later phases.
+- JMS Active MQ is integrated 
+- Added Jenkinsfile - pipelined  project
+- Mail via: FakeSMTP or MailHog (On Win/Linux or Docker ) http://localhost:8025/
 
 
 # How to setup/run/test application
