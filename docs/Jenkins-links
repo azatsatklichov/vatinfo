@@ -1,4 +1,8 @@
 
+https://github.com/g0t4/jenkins2-course-spring-petclinic.git
+https://git.io/vKSVZ
+https://github.com/g0t4/solitaire-systemjs-course/tree/jenkins2-course
+
 
 https://jenkins.io/doc/book/pipeline/
 https://jenkins.io/changelog-stable/
@@ -11,6 +15,17 @@ Update plugin: https://updates.jenkins.io/update-center.json
 --running Jenkins on docker:  Official Jenkins Docker image
 https://hub.docker.com/r/jenkins/jenkins
 https://github.com/jenkinsci/docker/blob/master/README.md
+
+
+--- adding NODE --
+Run from agent command line:
+
+java -jar agent.jar -jnlpUrl http://localhost:8080/jenkins/computer/agent1/slave-agent.jnlp -secret 8696e6bc2bca7529e5d2f98be0429ce749fae558507b78d8d7c659b851aaa3b2 -workDir "/tmp/jenkins-agent1"
+Run from agent command line, with the secret stored in a file:
+
+echo 8696e6bc2bca7529e5d2f98be0429ce749fae558507b78d8d7c659b851aaa3b2 > secret-file
+java -jar agent.jar -jnlpUrl http://localhost:8080/jenkins/computer/agent1/slave-agent.jnlp -secret @secret-file -workDir "/tmp/jenkins-agent1"
+
 
 1) via docker run -p 8080:8080 -p 50000:50000 jenkins/jenkins
 docker run -p 8090:8080 -p 50000:50000 jenkins/jenkins
@@ -37,3 +52,5 @@ The local Maven repository can be reused across containers by creating a volume 
 docker volume create --name maven-repo
 docker run -it -v maven-repo:/root/.m2 maven mvn archetype:generate # will download artifacts
 docker run -it -v maven-repo:/root/.m2 maven mvn archetype:generate # will reuse downloaded artifacts
+
+
