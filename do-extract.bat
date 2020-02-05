@@ -1,0 +1,1 @@
+tar -xzf vatinfo_copy.tgz
