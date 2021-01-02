@@ -34,8 +34,8 @@ Checkout the GitHub project, and just Java8 is needed in advance, then just from
 
 1. Browse for highest and lowest Standard VAT 
 
-http://localhost:9091/vatRates?count=5
-http://localhost:9091/vatRates?count=12
+- http://localhost:9091/vatRates?count=5
+- http://localhost:9091/vatRates?count=12
 
 2. Use Swagger to test the application
 
@@ -84,8 +84,8 @@ Response:
 
 3. HATEOAS testing 
 
-http://localhost:9091/users
-http://localhost:9091/books
+- http://localhost:9091/users
+- http://localhost:9091/books
 
 4. Browse for Mongo: e.g. http://localhost:9090/getCustomers?firstName=Alana&lastName=tolsto
 

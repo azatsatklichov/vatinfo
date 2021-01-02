@@ -7,6 +7,7 @@ import java.util.Map;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -36,10 +37,12 @@ public class VatRateResource {
 	private VatRateService vatRateService;
 
 	@ResponseBody
-	@RequestMapping(value = "/vatRates", method = RequestMethod.GET)
+	@RequestMapping(value = "/vatRates", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE, headers = {
+			"Accept=application/json", "content-type=application/json" }) //
 	public Map<String, List<String>> getVatRates(
 			@RequestParam(name = "count", required = false, defaultValue = "0") int count, Map<String, Object> model) {
 
+		// https://medium.com/@abhimanyu081/sprin-mvc-content-type-is-not-being-set-correctly-3946706b0b2a
 		VatRateResponse response = vatRateService.process();
 
 		List<Rate> rates = response.getRates();
@@ -60,6 +63,13 @@ public class VatRateResource {
 		// save to mongo
 		vatRateService.addVatRate(new VatRate(key1, vatHighestStandardRates));
 		vatRateService.addVatRate(new VatRate(key2, vatLowestStandardRates));
+
+		/*
+		 * final HttpHeaders httpHeaders = new HttpHeaders();
+		 * httpHeaders.setContentType(MediaType.APPLICATION_JSON); return new
+		 * ResponseEntity < String > ("{\"message\": \"hello\"}", httpHeaders,
+		 * HttpStatus.OK);
+		 */
 
 		return mapVatRates;
 

@@ -12,7 +12,7 @@ import net.sahet.vatinfo.utils.DateTimeUtil;
 
 public class CustomDateSerializer extends JsonSerializer<LocalDate> {
 
-	private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DateTimeUtil.DATE_FORMAT);
+	private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DateTimeUtil.DATE_FORMAT2);
 
 	@Override
 	public void serialize(LocalDate value, JsonGenerator jsonGenerator, SerializerProvider serializerProvider)

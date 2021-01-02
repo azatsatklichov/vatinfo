@@ -9,17 +9,18 @@ import lombok.experimental.UtilityClass;
 public class DateTimeUtil {
 
     public static final String DATE_FORMAT = "yyyy-MM-dd";
+    public static final String DATE_FORMAT2 = "dd-MM-yyyy";
     public static final String DATETIME_FORMAT = "yyyy-MM-dd HH:mm:ss";
 
     public static String now() {
         LocalDate localDate = LocalDate.now();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMAT);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMAT2);
 
         return localDate.format(formatter);
     }
 
     public static LocalDate getDate(String date) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMAT);
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern(DATE_FORMAT2);
         return LocalDate.parse(date, formatter);
     }
 }
