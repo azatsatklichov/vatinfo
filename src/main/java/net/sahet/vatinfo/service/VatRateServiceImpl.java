@@ -45,8 +45,8 @@ public class VatRateServiceImpl implements VatRateService {
 
 		// Note: here we are making this converter to process any kind of response,
 		// not only application/*json, which is the default behaviour
-		//converter.setSupportedMediaTypes(Collections.singletonList(MediaType.ALL));
-		//messageConverters.add(converter);
+		// converter.setSupportedMediaTypes(Collections.singletonList(MediaType.ALL));
+		// messageConverters.add(converter);
 
 		RestTemplate restTemplate = new RestTemplate();
 		restTemplate.setMessageConverters(messageConverters);
@@ -55,7 +55,7 @@ public class VatRateServiceImpl implements VatRateService {
 		mappingJackson2HttpMessageConverter
 				.setSupportedMediaTypes(Arrays.asList(MediaType.APPLICATION_JSON, MediaType.APPLICATION_OCTET_STREAM));
 		restTemplate.getMessageConverters().add(mappingJackson2HttpMessageConverter);
-  
+
 		List<MediaType> mediaTypes = new ArrayList<MediaType>();
 		mediaTypes.add(MediaType.TEXT_HTML);
 		mediaTypes.add(MediaType.APPLICATION_JSON);
@@ -63,7 +63,6 @@ public class VatRateServiceImpl implements VatRateService {
 		messageConverters.add(converter);
 		messageConverters.add(new StringHttpMessageConverter());
 		restTemplate.setMessageConverters(messageConverters);
-		 
 
 		ResponseEntity<VatRateResponse> forEntity = restTemplate.getForEntity(vatSourceFromUrl, VatRateResponse.class);
 
