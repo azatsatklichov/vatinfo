@@ -27,7 +27,10 @@ Checkout the GitHub project, and just Java8 is needed in advance, then just from
 - ActiveMQ is needed to be installed and started (or there is an option of using in-memory broker)
 + In memory H2 database is embedded automatically  
 
-1. run "run-dev.bat"  
+
+1. run: c:\Apps\apache-activemq-5.15.11\bin\win64>activemq.bat
+2. run Mongo (via MongoDB Compass or directly under folder)
+3. run "run-dev.bat"  
 
 
 # Testing
@@ -36,6 +39,21 @@ Checkout the GitHub project, and just Java8 is needed in advance, then just from
 
 - http://localhost:9091/vatRates?count=5
 - http://localhost:9091/vatRates?count=12
+
+http://localhost:9091/all_rates
+
+http://localhost:9091/rates
+http://localhost:9091/ratess
+http://localhost:9091/ratesss
+
+
+http://localhost:9091/rates2
+http://localhost:9091/rates2?count=12
+
+http://localhost:9091/rates3
+http://localhost:9091/rates3?count=12
+
+
 
 2. Use Swagger to test the application
 
